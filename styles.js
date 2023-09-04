@@ -4,34 +4,34 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    marginTop: 50, // Add margin top
+    //marginTop: 50,
     backgroundColor: "#ffffff",
   },
   compareText: {
     fontWeight: "bold",
     fontSize: 26,
-    marginBottom: 30,
+    marginBottom: 20,
     textAlign: "center",
   },
   itemContainer: {
-    marginBottom: 30,
+    //marginBottom: 0,
     justifyContent: "center",
     alignItems: "center",
   },
   itemHeader: {
     fontWeight: "bold",
     fontSize: 16,
-    paddingBottom: 10,
+    paddingBottom: 5,
   },
   statsText: {
     paddingBottom: 10,
     textAlign: "center",
   },
   statsContainer: {
-    flexDirection: "row", // Display columns side by side
-    justifyContent: "center", // Center blocks horizontally
-    alignItems: "center", // Center blocks vertically
-    marginBottom: 0, // Add a bit of space between the blocks
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 0,
   },
   column: {
     flex: 1,
@@ -60,10 +60,17 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 17,
     fontWeight: "bold",
+    textAlign: "center",
   },
   resultText: {
     marginTop: 10,
     textAlign: "center",
+    fontWeight: "bold",
+  },
+  centeredText: {
+    textAlign: "center",
+    fontWeight: "bold",
+    fontSize: 14,
   },
 });
 
