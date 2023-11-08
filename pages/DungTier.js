@@ -9,7 +9,7 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
 } from "react-native";
-import styles from "./styles";
+import styles from "../styles/styles";
 
 const DungTier = () => {
   const [currentLevel, setCurrentLevel] = useState("");

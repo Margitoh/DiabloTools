@@ -2,11 +2,12 @@ import React from "react";
 import { View, Button, StyleSheet, TouchableOpacity, Text } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import Calculator from "./Calculator";
-import DungTier from "./DungTier";
-import styles from "./styles";
-import CustomHeader from "./CustomHeader";
-import GlyphExpCalculator from "./GlyphExp";
+import Calculator from "././pages/Calculator";
+import DungTier from "././pages/DungTier";
+import styles from "./styles/styles";
+import CustomHeader from "./header/CustomHeader";
+import GlyphExpCalculator from "././pages/GlyphExp";
+import ItemTracker from "./pages/itemTracker/ItemTracker";
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,7 @@ const App = () => {
         <Stack.Screen name="Calculator" component={Calculator} />
         <Stack.Screen name="DungTier" component={DungTier} />
         <Stack.Screen name="GlyphExp" component={GlyphExpCalculator} />
+        <Stack.Screen name="ItemTracker" component={ItemTracker} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -46,9 +48,15 @@ const HomeScreen = ({ navigation }) => {
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate("GlyphExp")}
-          style={[styles.button, homeStyles.button]}
+          style={[styles.button, homeStyles.button, { marginBottom: 20 }]}
         >
           <Text style={styles.buttonText}>Glyph Experience</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("ItemTracker")}
+          style={[styles.button, homeStyles.button]}
+        >
+          <Text style={styles.buttonText}>Item Tracker</Text>
         </TouchableOpacity>
       </View>
     </View>

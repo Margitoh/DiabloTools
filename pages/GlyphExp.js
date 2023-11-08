@@ -8,7 +8,7 @@ import {
   TextInput,
   TouchableOpacity,
 } from "react-native";
-import styles from "./styles";
+import styles from "../styles/styles";
 
 const GlyphExpCalculator = () => {
   const [glyphTier, setGlyphTier] = useState("");
