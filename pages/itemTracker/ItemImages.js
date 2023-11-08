@@ -58,7 +58,6 @@ const itemImages = {
   "X'Fal's Corroded Signet": require("../../assets/X'Fal's_Corroded_Signet.png"),
 
   NotFound: require("../../assets/NotFound.png"),
-  // Add other item names and their corresponding image sources
 };
 
 export default itemImages;

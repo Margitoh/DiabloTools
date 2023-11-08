@@ -154,7 +154,7 @@ class ItemTracker extends Component {
   constructor() {
     super();
     this.state = {
-      selectedBoss: "Grigoire", // Default selected boss
+      selectedBoss: "Grigoire",
       items: itemsByBoss["Grigoire"].map((name) => ({
         name,
         status: "Normal",
@@ -253,7 +253,7 @@ const styles = StyleSheet.create({
   item: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center", //test if this breaks
+    alignItems: "center",
     marginVertical: 0,
     padding: 0,
     borderWidth: 1,
@@ -273,17 +273,17 @@ const styles = StyleSheet.create({
     color: "white",
   },
   itemContainer: {
-    flexDirection: "row", // Make it a row layout to display the icon and text horizontally
-    alignItems: "center", // Align items vertically in the center
-    padding: 10, // Add padding as needed
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 10,
   },
   iconContainer: {
-    marginRight: 10, // Adjust the margin as needed -> test if margin breaks it
+    marginRight: 10,
   },
   itemImage: {
-    width: 60, // Set the width as per your design
-    height: 60, // Set the height as per your design
-    marginRight: 10, // Adjust the margin as needed -> test if margin breaks it
+    width: 60,
+    height: 60,
+    marginRight: 10,
   },
 });
 
