@@ -34,6 +34,7 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View style={[homeStyles.container, homeStyles.centeredContainer]}>
       <View>
+        <Text style={homeStyles.title}>Diablo IV Tools</Text>
         <TouchableOpacity
           onPress={() => navigation.navigate("Calculator")}
           style={[styles.button, homeStyles.button, { marginBottom: 20 }]}
@@ -77,6 +78,14 @@ const homeStyles = StyleSheet.create({
   button: {
     paddingVertical: 10,
     paddingHorizontal: 20,
+    borderRadius: 5,
+    backgroundColor: "#A50905",
+  },
+  title: {
+    fontSize: 32,
+    fontWeight: "bold",
+    marginBottom: 30,
+    textAlign: "center",
   },
 });
 
